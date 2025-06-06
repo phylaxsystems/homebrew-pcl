@@ -32,10 +32,10 @@ class Phylax < Formula
     end
   
     def install
-      bin.install "pcl" => "phylax"
+      bin.install "pcl"
     end
   
     test do
-      assert_match "pcl #{version}", shell_output("#{bin}/phylax --version")
+      assert_match "pcl #{version}", shell_output("#{bin}/pcl --version")
     end
   end 
