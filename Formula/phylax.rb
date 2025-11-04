@@ -1,7 +1,7 @@
 class Phylax < Formula
   desc "Phylax Credible Layer (PCL) CLI"
   homepage "https://github.com/phylaxsystems/credible-sdk"
-  version "0.6.1"
+  version "0.6.2"
 
   # Define URLs and SHA256 checksums for different architectures
   # You will need to update these for each new release.
@@ -10,20 +10,20 @@ class Phylax < Formula
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/phylaxsystems/credible-sdk/releases/download/#{version}/pcl-#{version}-macos-x86_64.tar.gz"
-      sha256 "73137dfaae3f02d8dc8d1a1829ec5c26e70948775a98d9a5d7a342f5a86112e9"
+      sha256 "4c9ca87d700cb95e0712165bd8038f69bb0e4d8eae6e5cade2a7442895852a2e"
     elsif Hardware::CPU.arm?
       url "https://github.com/phylaxsystems/credible-sdk/releases/download/#{version}/pcl-#{version}-macos-arm64.tar.gz"
-      sha256 "4d2b7a18d2bd66afd3017c695982e63be5a635f0ec3b5698c3dcd10004ae1964"
+      sha256 "9a7e3c7d5902d13590b558a80833c691b930e160db187a22477ffced41b9328b"
     else
       odie "Unsupported MacOS architecture."
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/phylaxsystems/credible-sdk/releases/download/#{version}/pcl-#{version}-linux-x86_64.tar.gz"
-      sha256 "8e0d51bd2a9044cdb30da686907e95d7a85d365e1ad532a4162942656204761c"
+      sha256 "3019edc4897be6dd3a7823d28460db434b196b216973cce2d0a4a84e5ca4eca2"
     elsif Hardware::CPU.arm?
       url "https://github.com/phylaxsystems/credible-sdk/releases/download/#{version}/pcl-#{version}-linux-arm64.tar.gz"
-      sha256 "7946ec64a59ca8685dc4acd25376afb5f63ce47af57ff40cbc1ddd4fa83d06c8"
+      sha256 "7c7033af3ecaaec8acb7277d4dd974a856dfec22028924ca2d721988c3543a07"
     else
       odie "Unsupported Linux architecture."
     end
