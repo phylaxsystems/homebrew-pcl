@@ -1,7 +1,7 @@
 class Phylax < Formula
   desc "Phylax Credible Layer (PCL) CLI"
   homepage "https://github.com/phylaxsystems/credible-sdk"
-  version "0.9.1"
+  version "0.9.2"
 
   # Define URLs and SHA256 checksums for different architectures
   # You will need to update these for each new release.
