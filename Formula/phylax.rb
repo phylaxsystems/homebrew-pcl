@@ -1,7 +1,7 @@
 class Phylax < Formula
   desc "Credible Layer CLI"
   homepage "https://github.com/phylaxsystems/credible-sdk"
-  version "1.1.1"
+  version "1.1.2"
 
   if OS.mac?
     if Hardware::CPU.arm?
