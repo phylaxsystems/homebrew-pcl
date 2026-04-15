@@ -1,7 +1,7 @@
 class Phylax < Formula
   desc "Credible Layer CLI"
   homepage "https://github.com/phylaxsystems/pcl"
-  version "1.3.1"
+  version "1.3.3"
 
   on_macos do
     depends_on arch: :arm64
